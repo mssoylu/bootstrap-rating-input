@@ -8,11 +8,11 @@
       'min': 1,
       'max': 5,
       'empty-value': 0,
-      'iconLib': 'glyphicon',
-      'activeIcon': 'glyphicon-star',
-      'inactiveIcon': 'glyphicon-star-empty',
+      'iconLib': 'fa',
+      'activeIcon': 'fa-star',
+      'inactiveIcon': 'fa-star-o',
       'clearable': false,
-      'clearableIcon': 'glyphicon-remove',
+      'clearableIcon': 'fa-remove',
       'clearableRemain': false,
       'inline': false,
       'readonly': false,
@@ -65,8 +65,7 @@
     if (options.clearable && !options.readonly) {
       $ratingEl.append('&nbsp;').append(
         '<a class="' + clearClass + '">' +
-          '<i class="' + options.iconLib + ' ' + options.clearableIcon + '"/>' +
-          options.clearableLabel +
+          '<i class="' + options.iconLib + ' ' + options.clearableIcon + '" >' +
         '</a>'
       );
     }
